@@ -1,0 +1,4 @@
+yarn.lock
+.travis.yml
+.gitignore
+test
