@@ -10,7 +10,7 @@ module.exports = {
     'compat/compat': ['error'],
     'func-names': ['error', 'as-needed'],
     'max-len': [
-      'error',
+      'warn',
       {
         code: 80,
         comments: 65,
