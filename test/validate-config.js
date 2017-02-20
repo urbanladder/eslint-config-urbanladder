@@ -6,7 +6,7 @@ test.createStream()
   .pipe(tapSpec())
   .pipe(process.stdout)
 
-test('load config in eslint to validate all rule syntax is correct', (t) => {
+test('test load config in eslint to validate all rule syntax is correct', (t) => {
   const CLIEngine = eslint.CLIEngine
 
   const cli = new CLIEngine({
