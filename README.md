@@ -34,3 +34,12 @@ To use the JavaScript style config, add this to your .eslintrc file:
 
 You can override settings from the shareable config by adding them directly into your
 `.eslintrc` file.
+
+## Uses
+- [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) 
+- [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
+- [eslint-plugin-css-modules](https://github.com/atfzl/eslint-plugin-css-modules)
+- [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc)
+- [eslint-plugin-sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members)
+
