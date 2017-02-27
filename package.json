@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanladder/eslint-config-urbanladder.git"
+  },
   "scripts": {
     "test": "tape test/*.js "
   },
