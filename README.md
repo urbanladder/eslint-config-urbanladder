@@ -3,6 +3,8 @@
 [![npm (scoped)](https://img.shields.io/npm/v/eslint-config-urbanladder.svg)](https://www.npmjs.com/package/eslint-config-urbanladder)
 [![npm](https://img.shields.io/npm/l/eslint-config-urbanladder.svg)](https://www.npmjs.com/package/eslint-config-urbanladder)
 
+This package provides Urbanladder's `.eslintrc` as an extensible shared config.
+
 
 ## Installing
 
