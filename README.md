@@ -1,13 +1,10 @@
 # ESLint Config Urban Ladder
 [![travis][travis-image]][travis-url]
-[![npm][npm-image]][npm-url]
 
-[travis-image]: https://img.shields.io/travis/feross/eslint-config-standard/master.svg
-[travis-url]: https://travis-ci.org/feross/eslint-config-standard
-[npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
-[npm-url]: https://npmjs.org/package/eslint-config-standard
-[downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
-[downloads-url]: https://npmjs.org/package/eslint-config-standard
+[travis-image]: https://img.shields.io/travis/urbanladder/eslint-config-urbanladder/master.svg
+[travis-url]: https://travis-ci.org/urbanladder/eslint-config-urbanladder
+[![npm (scoped)](https://img.shields.io/npm/v/mobx-promise.svg)](https://www.npmjs.com/package/eslint-config-urbanladder)
+
 
 ## Installing
 
