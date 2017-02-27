@@ -4,11 +4,32 @@ module.exports = {
     es6: true,
   },
   extends: ['airbnb'],
-  plugins: ['compat', 'unicorn'],
+  plugins: ['css-modules', 'compat', 'jsdoc', 'unicorn', 'sort-class-members'],
   rules: {
-    'class-methods-use-this': ['off'],
+    // Compat
     'compat/compat': ['error'],
+
+    // CSS Modules
+    'css-modules/no-unused-class': ['error'],
+    'css-modules/no-undef-class': ['error'],
+
+    // JsDoc
+    'jsdoc/check-param-names': ['error'],
+    'jsdoc/check-tag-names': ['error'],
+    'jsdoc/check-types': ['error'],
+    'jsdoc/newline-after-description': ['error'],
+    'jsdoc/require-hyphen-before-param-description': ['error'],
+
+    // Disabling rules from airbnb config
+    'class-methods-use-this': ['off'],
+    'global-require': ['off'],
+    'no-plusplus': ['off'],
+    'no-underscore-dangle': ['off'],
+
+    // Enabling / Editing rules
+    // disabled in airbnb config
     'func-names': ['error', 'as-needed'],
+    'max-depth': ['error', 4],
     'max-len': [
       'error',
       {
@@ -19,38 +40,96 @@ module.exports = {
         ignoreUrls: true,
       },
     ],
+    'max-params': ['error', 3],
+    'max-statements-per-line': ['error', { 'max': 1 }],
+    'max-statements': ['error', 12],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
-    'space-before-function-paren': ['error', 'never'],
-    semi: ['error', 'never'],
-    'global-require': ['off'],
-    'no-console': ['warn', { allow: ['error'] }],
-    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
+    'no-console': ['error', { allow: ['error'] }],
+    'no-negated-condition': ['error'],
     'no-restricted-syntax': [
       'error',
       'ForInStatement',
       'LabeledStatement',
       'WithStatement',
     ],
-    'no-underscore-dangle': ['off'],
+    'operator-linebreak': ['error', 'after'],
+    'prefer-destructuring': ['error', {
+      'array': false,
+      'object': true,
+    }, {
+      'enforceForRenamedProperties': false,
+    }],
+    'radix': ['error', 'as-needed'],
+    semi: ['error', 'never'],
+
+    // React specific
+
+    // Disabling rules
+    'react/sort-comp': ['off'],
+    'react/require-default-props': ['off'],
+    'react/no-unescaped-entities': ['off'],
+
+    // Enabling rules
+    'react/jsx-key': ['error'],
+    'react/jsx-handler-names': ['error', {
+      'eventHandlerPrefix': 'handle',
+      'eventHandlerPropPrefix': 'on',
+    }],
+
+    //
     'react/forbid-prop-types': ['error', { forbid: ['any', 'array'] }],
     'react/jsx-curly-spacing': ['error', 'always'],
-    'react/require-default-props': ['off'],
-    'react/jsx-space-before-closing': ['off'],
-    'react/no-unescaped-entities': ['off'],
-    'react/sort-comp': [
-      'error',
-      {
-        order: [
-          'static-methods',
-          'lifecycle',
-          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-          '/^handle.+$/',
-          'everything-else',
-          '/^render.+$/',
-          'render',
+    'space-before-function-paren': ['error', 'never'],
+
+    // Sort class members
+    'sort-class-members/sort-class-members': ['error', {
+      'order': [
+        '[preLifecycle]',
+        'constructor',
+        '[lifecycle]',
+        'static-methods',
+        '[conventional-private-methods]',
+        '[getters]',
+        '[getMethods]',
+        '[accessor-pairs]',
+        '[everything-else]',
+        '[eventHandlers]',
+        '[render]',
+      ],
+      'groups': {
+        preLifecycle: [
+          { name: 'displayName', type: 'property'},
+          { name: 'propTypes', type: 'property'},
+          { name: 'contextTypes', type: 'property'},
+          { name: 'childContextTypes', type: 'property'},
+          { name: 'defaultProps', type: 'property'},
         ],
+        lifecycle: [
+          { name: 'getDefaultProps', type:'method' },
+          { name: 'getInitialState', type:'method' },
+          { name: 'state', type:'property' },
+          { name: 'getChildContext', type:'method' },
+          { name: 'componentWillMount', type:'method' },
+          { name: 'componentDidMount', type:'method' },
+          { name: 'componentWillReceiveProps', type:'method' },
+          { name: 'shouldComponentUpdate', type:'method' },
+          { name: 'componentWillUpdate', type:'method' },
+          { name: 'componentDidUpdate', type:'method' },
+          { name: 'componentWillUnmount', type:'method' },
+        ],
+        getMethods: [
+          { name: '/get.+/' },
+        ],
+        eventHandlers: [
+          { name: '/on.+/' },
+          { name: '/handle.+/' },
+        ],
+        render: [{ name: 'render', type:'method' }],
       },
-    ],
+      'accessorPairPositioning': 'getThenSet',
+    }],
+
+    // Unicorn
     'unicorn/throw-new-error': ['error'],
     'unicorn/no-abusive-eslint-disable': ['error'],
     'unicorn/number-literal-case': ['error'],
