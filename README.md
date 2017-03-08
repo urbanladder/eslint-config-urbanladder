@@ -14,7 +14,7 @@ npm install eslint-config-urbanladder
 ```
 
 ####2. Install peer dependencies
-OSX / Linux users can simply run
+OSX / Linux users can simply run (replace `npm` with `yarn` if that's what you use)
 ```bash
 (
   export PKG=eslint-config-urbanladder;
