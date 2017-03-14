@@ -84,10 +84,11 @@ module.exports = {
     // Sort class members
     'sort-class-members/sort-class-members': ['error', {
       'order': [
+        '[static-properties]',
         '[preLifecycle]',
         'constructor',
         '[lifecycle]',
-        'static-methods',
+        '[static-methods]',
         '[conventional-private-methods]',
         '[getters]',
         '[getMethods]',
