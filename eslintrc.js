@@ -10,7 +10,12 @@ module.exports = {
     'compat/compat': ['error'],
 
     // CSS Modules
-    'css-modules/no-unused-class': ['error'],
+
+    // Disabling rule as it does not play nicely
+    // with the pattern of multiple components
+    // importing single css file
+    //'css-modules/no-unused-class': ['error'],
+
     'css-modules/no-undef-class': ['error'],
 
     // JsDoc
