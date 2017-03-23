@@ -43,6 +43,8 @@ module.exports = {
         ignoreStrings: true,
         ignoreTrailingComments: true,
         ignoreUrls: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
       },
     ],
     'max-params': ['error', 3],
