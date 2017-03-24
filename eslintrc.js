@@ -69,6 +69,9 @@ module.exports = {
     'radix': ['error', 'as-needed'],
     semi: ['error', 'never'],
 
+    // Accessibility
+    'eslint-plugin-jsx-a11y/no-static-element-interactions': ['off'],
+
     // React specific
 
     // Disabling rules
