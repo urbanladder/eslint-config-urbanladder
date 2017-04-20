@@ -1,10 +1,10 @@
 # Change Log
 
-## [v0.3.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.2.1) (2017-03-24)
+## [v0.3.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.3.1) (2017-03-24)
 
 - Disabled: react/no-did-mount-set-state (01fb3aba0651bcc5164591e572b96d169ce72eb1)
 
-## [v0.3.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.2.1) (2017-03-24)
+## [v0.3.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.3.0) (2017-03-24)
 
 - Disabled: eslint-plugin-jsx-a11y/no-static-element-interactions (d38f6767ee696f9523a8a85bb9c7cadb1fff81ac)
 - Exception: Relax max-len for string literals (bdb6788fcadcee10ef1d873d73c96d7277df79f8)
