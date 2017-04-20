@@ -78,6 +78,7 @@ module.exports = {
     'react/sort-comp': ['off'],
     'react/require-default-props': ['off'],
     'react/no-unescaped-entities': ['off'],
+    'react/no-did-mount-set-state': ['off'],
 
     // Enabling rules
     'react/jsx-key': ['error'],
