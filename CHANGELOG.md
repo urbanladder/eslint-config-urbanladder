@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.3.1) (2017-08-14)
+- Updated to eslint v4 and eslint-config-airbnb v15 (d8591c1cce504527fc202f777722011708f5b632)
+
 ## [v0.3.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v0.3.1) (2017-03-24)
 
 - Disabled: react/no-did-mount-set-state (01fb3aba0651bcc5164591e572b96d169ce72eb1)
