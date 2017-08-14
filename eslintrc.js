@@ -59,6 +59,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'no-return-assign': ['error', 'except-parens'],
     'operator-linebreak': ['error', 'after'],
     'prefer-destructuring': ['error', {
       'array': false,
