@@ -10,7 +10,7 @@ This package provides Urbanladder's `.eslintrc` as an extensible shared config.
 
 ####1. Install the package
 ```bash
-npm install eslint-config-urbanladder
+yarn add eslint-config-urbanladder
 ```
 
 ####2. Install peer dependencies
@@ -18,7 +18,7 @@ OSX / Linux users can simply run (replace `npm` with `yarn` if that's what you u
 ```bash
 (
   export PKG=eslint-config-urbanladder;
-  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
 )
 ```
 
