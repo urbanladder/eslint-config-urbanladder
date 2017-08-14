@@ -80,6 +80,7 @@ module.exports = {
     'react/require-default-props': ['off'],
     'react/no-unescaped-entities': ['off'],
     'react/no-did-mount-set-state': ['off'],
+    'react/jsx-indent': ['off'], // Taken care by eslint `indent` rule
 
     // Enabling rules
     'react/jsx-key': ['error'],
