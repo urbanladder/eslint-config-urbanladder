@@ -1,8 +1,10 @@
 # Change Log
 
+## [1.1.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v1.1.0) (2017-08-14)
+-  Disable rule `react/jsx-indent`. Redundant after upgrade to eslint v4 (`indent` rule) (0d59391adedc063e06d3fa7d654e6a808f38e524)
+
 ## [1.0.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v1.0.1) (2017-08-14)
 -   Okay to return assignment if wrapped in brackets (41046545a5c15e1b11c5e5a0c6c54ac2e9c2e2e7)
-
 
 ## [1.0.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v1.0.0) (2017-08-14)
 - Updated to eslint v4 and eslint-config-airbnb v15 (d8591c1cce504527fc202f777722011708f5b632)
