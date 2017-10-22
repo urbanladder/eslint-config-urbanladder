@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.0.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.0.0) (2017-08-14)
+- Updated to `eslint-config-airbnb` v16.1.0
+- Set `allowChildren` to true for rule `jsx-a11y/label-has-for`
+
 ## [1.1.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v1.1.0) (2017-08-14)
 -  Disable rule `react/jsx-indent`. Redundant after upgrade to eslint v4 (`indent` rule) (0d59391adedc063e06d3fa7d654e6a808f38e524)
 
