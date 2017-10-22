@@ -71,7 +71,8 @@ module.exports = {
     semi: ['error', 'never'],
 
     // Accessibility
-    'eslint-plugin-jsx-a11y/no-static-element-interactions': ['off'],
+    'jsx-a11y/no-static-element-interactions': ['off'],
+    'jsx-a11y/label-has-for': ['error', { 'allowChildren': true }],
 
     // React specific
 
@@ -112,24 +113,24 @@ module.exports = {
       ],
       'groups': {
         preLifecycle: [
-          { name: 'displayName', type: 'property'},
-          { name: 'propTypes', type: 'property'},
-          { name: 'contextTypes', type: 'property'},
-          { name: 'childContextTypes', type: 'property'},
-          { name: 'defaultProps', type: 'property'},
+          { name: 'displayName', type: 'property' },
+          { name: 'propTypes', type: 'property' },
+          { name: 'contextTypes', type: 'property' },
+          { name: 'childContextTypes', type: 'property' },
+          { name: 'defaultProps', type: 'property' },
         ],
         lifecycle: [
-          { name: 'getDefaultProps', type:'method' },
-          { name: 'getInitialState', type:'method' },
-          { name: 'state', type:'property' },
-          { name: 'getChildContext', type:'method' },
-          { name: 'componentWillMount', type:'method' },
-          { name: 'componentDidMount', type:'method' },
-          { name: 'componentWillReceiveProps', type:'method' },
-          { name: 'shouldComponentUpdate', type:'method' },
-          { name: 'componentWillUpdate', type:'method' },
-          { name: 'componentDidUpdate', type:'method' },
-          { name: 'componentWillUnmount', type:'method' },
+          { name: 'getDefaultProps', type: 'method' },
+          { name: 'getInitialState', type: 'method' },
+          { name: 'state', type: 'property' },
+          { name: 'getChildContext', type: 'method' },
+          { name: 'componentWillMount', type: 'method' },
+          { name: 'componentDidMount', type: 'method' },
+          { name: 'componentWillReceiveProps', type: 'method' },
+          { name: 'shouldComponentUpdate', type: 'method' },
+          { name: 'componentWillUpdate', type: 'method' },
+          { name: 'componentDidUpdate', type: 'method' },
+          { name: 'componentWillUnmount', type: 'method' },
         ],
         getMethods: [
           { name: '/get.+/' },
@@ -138,7 +139,7 @@ module.exports = {
           { name: '/on.+/' },
           { name: '/handle.+/' },
         ],
-        render: [{ name: 'render', type:'method' }],
+        render: [{ name: 'render', type: 'method' }],
       },
       'accessorPairPositioning': 'getThenSet',
     }],
