@@ -94,6 +94,7 @@ module.exports = {
     'react/forbid-prop-types': ['error', { forbid: ['any', 'array'] }],
     'react/jsx-curly-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
+    'function-paren-newline': ['error', 'consistent'],
 
     // Sort class members
     'sort-class-members/sort-class-members': ['error', {

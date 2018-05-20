@@ -1,5 +1,8 @@
 # Change Log
 
+## [2.1.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.1.1) (2018-05-20)
+- Tweaked the `function-paren-newline` rule to accept `consistent` newlines inside function parens
+
 ## [2.1.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.1.0) (2018-05-20)
 - Updated all dependencies to the latest versions
 - Enable new rules from `eslint-plugin-unicorn`
