@@ -152,6 +152,12 @@ module.exports = {
     'unicorn/no-array-instanceof': ['error'],
     'unicorn/no-hex-escape': ['error'],
     'unicorn/prefer-starts-ends-with': ['error'],
+    'unicorn/custom-error-definition': ['error'],
     'unicorn/prefer-type-error': ['error'],
+    'unicorn/regex-shorthand': ['error'],
+    'unicorn/prefer-spread': ['error'],
+    'unicorn/error-message': ['error'],
+    'unicorn/no-unsafe-regex': ['error'],
+    'unicorn/prefer-add-event-listener': ['error'],
   },
 }
