@@ -1,5 +1,8 @@
 # Change Log
-## [2.2.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.2.0) (2018-05-20)
+## [2.2.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.2.0) (2018-05-21)
+- Tweaked rules for `jsx-a11y/anchor-is-valid` to support react-router's `Link`
+
+## [2.2.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.2.0) (2018-05-21)
 - Re-enabled `react/jsx-indent`
 - Tweaked rules for `object-curly-newline`, and `react/jsx-wrap-multilines`
 

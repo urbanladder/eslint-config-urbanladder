@@ -73,6 +73,10 @@ module.exports = {
     // Accessibility
     'jsx-a11y/no-static-element-interactions': ['off'],
     'jsx-a11y/label-has-for': ['error', { 'allowChildren': true }],
+    'jsx-a11y/anchor-is-valid': ['error', {
+      'components': ['Link'],
+      'specialLink': ['to'],
+    }],
 
     // React specific
 
