@@ -81,7 +81,6 @@ module.exports = {
     'react/require-default-props': ['off'],
     'react/no-unescaped-entities': ['off'],
     'react/no-did-mount-set-state': ['off'],
-    'react/jsx-indent': ['off'], // Taken care by eslint `indent` rule
 
     // Enabling rules
     'react/jsx-key': ['error'],
@@ -95,6 +94,23 @@ module.exports = {
     'react/jsx-curly-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
     'function-paren-newline': ['error', 'consistent'],
+
+    'object-curly-newline': ['error', {
+      'ObjectExpression': { 'consistent': true },
+      'ObjectPattern': { 'consistent': true },
+      'ImportDeclaration': { 'consistent': true },
+      'ExportDeclaration': { 'consistent': true },
+    }],
+
+    'react/jsx-wrap-multilines': ['error', {
+      'declaration': 'parens-new-line',
+      'assignment': 'parens-new-line',
+      'return': 'parens-new-line',
+      'arrow': 'parens-new-line',
+      'condition': 'parens-new-line',
+      'logical': 'parens-new-line',
+      'prop': 'parens-new-line',
+    }],
 
     // Sort class members
     'sort-class-members/sort-class-members': ['error', {

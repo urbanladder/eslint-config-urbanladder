@@ -1,4 +1,7 @@
 # Change Log
+## [2.2.0](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.2.0) (2018-05-20)
+- Re-enabled `react/jsx-indent`
+- Tweaked rules for `object-curly-newline`, and `react/jsx-wrap-multilines`
 
 ## [2.1.1](https://github.com/urbanladder/eslint-config-urbanladder/tree/v2.1.1) (2018-05-20)
 - Tweaked the `function-paren-newline` rule to accept `consistent` newlines inside function parens
